@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8"/>
     <title id="head-title">report.html</title>
-      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
     <h1 id="title">report.html</h1>
-    <p>Report generated on 14-Apr-2026 at 21:18:48 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
-        v4.1.1</p>
+    <p>Report generated on 14-Apr-2026 at 23:35:13 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.2.0</p>
     <div id="environment-header">
       <h2>Environment</h2>
     </div>
@@ -23,8 +23,9 @@
     <template id="template_results-table__body--empty">
       <tbody class="results-table-row">
         <tr id="not-found-message">
-          <td colspan="4">No results found. Check the filters.</th>
+          <td colspan="4">No results found. Check the filters.</td>
         </tr>
+      </tbody>
     </template>
     <template id="template_results-table__tbody">
       <tbody class="results-table-row">
@@ -35,14 +36,14 @@
             <div class="extraHTML"></div>
             <div class="media">
               <div class="media-container">
-                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__nav--left">&lt;</div>
                   <div class="media-container__viewport">
                     <img src="" />
                     <video controls>
                       <source src="" type="video/mp4">
                     </video>
                   </div>
-                  <div class="media-container__nav--right">></div>
+                  <div class="media-container__nav--right">&gt;</div>
                 </div>
                 <div class="media__name"></div>
                 <div class="media__counter"></div>
@@ -61,7 +62,7 @@
         <h2>Summary</h2>
         <div class="additional-summary prefix">
         </div>
-        <p class="run-count">2 tests took 00:00:45.</p>
+        <p class="run-count">2 tests took 00:01:02.</p>
         <p class="filter">(Un)check the boxes to filter the results.</p>
         <div class="summary__reload">
           <div class="summary__reload__button hidden" onclick="location.reload()">
@@ -71,20 +72,22 @@
         <div class="summary__spacer"></div>
         <div class="controls">
           <div class="filters">
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
-            <span class="failed">2 Failed,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" disabled/>
-            <span class="passed">0 Passed,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" >
+            <span class="failed">1 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" >
+            <span class="passed">1 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled>
             <span class="skipped">0 Skipped,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled>
             <span class="xfailed">0 Expected failures,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled>
             <span class="xpassed">0 Unexpected passes,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled>
             <span class="error">0 Errors,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled>
             <span class="rerun">0 Reruns</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="retried" disabled>
+            <span class="retried">0 Retried,</span>
           </div>
           <div class="collapse">
             <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
@@ -106,9 +109,8 @@
         </tr>
       </thead>
     </table>
-  </body>
   <footer>
-    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.12.3&#34;, &#34;Platform&#34;: &#34;Linux-6.8.0-107-generic-x86_64-with-glibc2.39&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;9.0.2&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;allure-pytest&#34;: &#34;2.15.3&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;html&#34;: &#34;4.1.1&#34;}}, &#34;tests&#34;: {&#34;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_launch_url&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_launch_url&#34;, &#34;duration&#34;: &#34;00:00:45&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_launch_url&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:45&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_careerPage.Test_CareePage object at 0x7418cb85cb00&amp;gt;\ndriver = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&amp;quot;38ec47231bf4d79f75e0abfecbe9ee68&amp;quot;)&amp;gt;\nconfig = {&amp;#x27;article_name&amp;#x27;: &amp;#x27;Life of two interns&amp;#x27;, &amp;#x27;title&amp;#x27;: &amp;#x27;Welcome to Example&amp;#x27;, &amp;#x27;url&amp;#x27;: &amp;#x27;https://www.tenforce.com/&amp;#x27;}\n\n    def test_launch_url(self, driver, config):\n        hp(driver).launch_url(config[&amp;quot;url&amp;quot;])\n        title = hp(driver).get_title()\n&amp;gt;       assert title == config[&amp;quot;title&amp;quot;]\nE       AssertionError: assert &amp;#x27;EHS Software...sk | TenForce&amp;#x27; == &amp;#x27;Welcome to Example&amp;#x27;\nE         \nE         - Welcome to Example\nE         + EHS Software for Safety, Compliance &amp;amp; Operational Risk | TenForce\n\nTestcases/Tenforce/test_careerPage.py:12: AssertionError\n&#34;}], &#34;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_career_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_career_page&#34;, &#34;duration&#34;: &#34;111 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_career_page&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;111 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_careerPage.Test_CareePage object at 0x7418cb85cda0&amp;gt;\ndriver = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&amp;quot;38ec47231bf4d79f75e0abfecbe9ee68&amp;quot;)&amp;gt;\nconfig = {&amp;#x27;article_name&amp;#x27;: &amp;#x27;Life of two interns&amp;#x27;, &amp;#x27;title&amp;#x27;: &amp;#x27;Welcome to Example&amp;#x27;, &amp;#x27;url&amp;#x27;: &amp;#x27;https://www.tenforce.com/&amp;#x27;}\n\n    def test_career_page(self, driver, config):\n&amp;gt;       cp(driver).scroll_down_to_element(*lc.ln_carreer)\n\nTestcases/Tenforce/test_careerPage.py:15: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nModule_Pages/Career.py:12: in scroll_down_to_element\n    element = self.driver.find_element(args)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../../PycharmProjects/PythonProject/Pytestframework/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:802: in find_element\n    return self.execute(Command.FIND_ELEMENT, {&amp;quot;using&amp;quot;: by, &amp;quot;value&amp;quot;: value})[&amp;quot;value&amp;quot;]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../../PycharmProjects/PythonProject/Pytestframework/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:432: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7418cdc43050&amp;gt;\nresponse = {&amp;#x27;status&amp;#x27;: 400, &amp;#x27;value&amp;#x27;: &amp;#x27;{&amp;quot;value&amp;quot;:{&amp;quot;error&amp;quot;:&amp;quot;invalid argument&amp;quot;,&amp;quot;message&amp;quot;:&amp;quot;invalid argument: \\&amp;#x27;using\\&amp;#x27; must be a string...\\\\n#15 0x56e0249d54de \\\\u003Cunknown&amp;gt;\\\\n#16 0x71a7cc09caa4 \\\\u003Cunknown&amp;gt;\\\\n#17 0x71a7cc129c6c \\\\u003Cunknown&amp;gt;\\\\n&amp;quot;}}&amp;#x27;}\n\n    def check_response(self, response: dict[str, Any]) -&amp;gt; None:\n        &amp;quot;&amp;quot;&amp;quot;Check that a JSON response from the WebDriver does not have an error.\n    \n        Args:\n            response: The JSON response from the WebDriver server as a dictionary\n                object.\n    \n        Raises:\n            WebDriverException: If the response contains an error message.\n        &amp;quot;&amp;quot;&amp;quot;\n        status = response.get(&amp;quot;status&amp;quot;, None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(&amp;quot;message&amp;quot;, &amp;quot;&amp;quot;)\n        screen: str = response.get(&amp;quot;screen&amp;quot;, &amp;quot;&amp;quot;)\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(&amp;quot;value&amp;quot;, None)\n            if value_json and isinstance(value_json, str):\n                try:\n                    value = json.loads(value_json)\n                    if isinstance(value, dict):\n                        if len(value) == 1:\n                            value = value[&amp;quot;value&amp;quot;]\n                        status = value.get(&amp;quot;error&amp;quot;, None)\n                        if not status:\n                            status = value.get(&amp;quot;status&amp;quot;, ErrorCode.UNKNOWN_ERROR)\n                            message = value.get(&amp;quot;value&amp;quot;) or value.get(&amp;quot;message&amp;quot;)\n                            if not isinstance(message, str):\n                                value = message\n                                message = message.get(&amp;quot;message&amp;quot;) if isinstance(message, dict) else None\n                        else:\n                            message = value.get(&amp;quot;message&amp;quot;, None)\n                except ValueError:\n                    pass\n    \n        exception_class: type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(&amp;quot;__&amp;quot;)]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[&amp;quot;value&amp;quot;]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == &amp;quot;&amp;quot; and &amp;quot;message&amp;quot; in value:\n            message = value[&amp;quot;message&amp;quot;]\n    \n        screen = None  # type: ignore[assignment]\n        if &amp;quot;screen&amp;quot; in value:\n            screen = value[&amp;quot;screen&amp;quot;]\n    \n        stacktrace = None\n        st_value = value.get(&amp;quot;stackTrace&amp;quot;) or value.get(&amp;quot;stacktrace&amp;quot;)\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(&amp;quot;\\n&amp;quot;)\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(&amp;quot;lineNumber&amp;quot;, &amp;quot;&amp;quot;)\n                        file = frame.get(&amp;quot;fileName&amp;quot;, &amp;quot;&amp;lt;anonymous&amp;gt;&amp;quot;)\n                        if line:\n                            file = f&amp;quot;{file}:{line}&amp;quot;\n                        meth = frame.get(&amp;quot;methodName&amp;quot;, &amp;quot;&amp;lt;anonymous&amp;gt;&amp;quot;)\n                        if &amp;quot;className&amp;quot; in frame:\n                            meth = f&amp;quot;{frame[&amp;#x27;className&amp;#x27;]}.{meth}&amp;quot;\n                        msg = &amp;quot;    at %s (%s)&amp;quot;\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if &amp;quot;data&amp;quot; in value:\n                alert_text = value[&amp;quot;data&amp;quot;].get(&amp;quot;text&amp;quot;)\n            elif &amp;quot;alert&amp;quot; in value:\n                alert_text = value[&amp;quot;alert&amp;quot;].get(&amp;quot;text&amp;quot;)\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n&amp;gt;       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: &amp;#x27;using&amp;#x27; must be a string\nE         (Session info: chrome=146.0.7680.75)\nE       Stacktrace:\nE       #0 0x56e0249d6a6a &amp;lt;unknown&amp;gt;\nE       #1 0x56e0243e5ab5 &amp;lt;unknown&amp;gt;\nE       #2 0x56e024437f04 &amp;lt;unknown&amp;gt;\nE       #3 0x56e0244388b1 &amp;lt;unknown&amp;gt;\nE       #4 0x56e024483614 &amp;lt;unknown&amp;gt;\nE       #5 0x56e0244807b6 &amp;lt;unknown&amp;gt;\nE       #6 0x56e02442bcbf &amp;lt;unknown&amp;gt;\nE       #7 0x56e02442ca81 &amp;lt;unknown&amp;gt;\nE       #8 0x56e02499ca64 &amp;lt;unknown&amp;gt;\nE       #9 0x56e02499f951 &amp;lt;unknown&amp;gt;\nE       #10 0x56e02498921e &amp;lt;unknown&amp;gt;\nE       #11 0x56e0249a051e &amp;lt;unknown&amp;gt;\nE       #12 0x56e02496fbe0 &amp;lt;unknown&amp;gt;\nE       #13 0x56e0249c39b8 &amp;lt;unknown&amp;gt;\nE       #14 0x56e0249c3b88 &amp;lt;unknown&amp;gt;\nE       #15 0x56e0249d54de &amp;lt;unknown&amp;gt;\nE       #16 0x71a7cc09caa4 &amp;lt;unknown&amp;gt;\nE       #17 0x71a7cc129c6c &amp;lt;unknown&amp;gt;\n\n../../PycharmProjects/PythonProject/Pytestframework/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:232: InvalidArgumentException\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.2&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.26200-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;9.0.3&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;allure-pytest&#34;: &#34;2.15.3&#34;, &#34;html&#34;: &#34;4.2.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_launch_url&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_launch_url&#34;, &#34;duration&#34;: &#34;00:00:24&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_launch_url&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:24&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_career_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_career_page&#34;, &#34;duration&#34;: &#34;00:00:36&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Testcases/Tenforce/test_careerPage.py::Test_CareePage::test_career_page&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:36&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;test_careerPage.Test_CareePage object at 0x000002AE9BBEBC50&amp;gt;\ndriver = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&amp;quot;ddb5cbe29b20daceddc01ddf490aff94&amp;quot;)&amp;gt;\nconfig = {&amp;#x27;article_name&amp;#x27;: &amp;#x27;Life of two interns&amp;#x27;, &amp;#x27;title&amp;#x27;: &amp;#x27;EHS Software for Safety, Compliance &amp;amp; Operational Risk | TenForce&amp;#x27;, &amp;#x27;url&amp;#x27;: &amp;#x27;https://www.tenforce.com/&amp;#x27;}\n\n    def test_career_page(self, driver, config):\n        time.sleep(2)\n        cp(driver).scroll_down_to_element(*lc.ln_carreer)\n        cp(driver).click_on_career_link()\n        cp(driver).click_on_LifeatTenforcesession()\n        cp(driver).select_article(config[&amp;#x27;article_name&amp;#x27;])\n        cp(driver).scroll_down_to_element(*lc.ln_carreer)\n        cp(driver).click_on_career_link()\n&amp;gt;       assert cp(driver).validation_of_Jobopenings == True\nE       assert validation_of_Jobopenings == True\nE        +  where validation_of_Jobopenings = &amp;lt;Module_Pages.Career.Career object at 0x000002AE9BD6C5A0&amp;gt;.validation_of_Jobopenings\nE        +    where &amp;lt;Module_Pages.Career.Career object at 0x000002AE9BD6C5A0&amp;gt; = cp(&amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&amp;quot;ddb5cbe29b20daceddc01ddf490aff94&amp;quot;)&amp;gt;)\n\nTestcases\\Tenforce\\test_careerPage.py:23: AssertionError\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
     <script>
       (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
@@ -236,10 +238,10 @@ const dom = {
         }
 
         if (collapsed) {
-            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.collapsible > .col-result')?.classList.add('collapsed')
             resultBody.querySelector('.extras-row').classList.add('hidden')
         } else {
-            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+            resultBody.querySelector('.collapsible > .col-result')?.classList.remove('collapsed')
         }
 
         const media = []
@@ -767,4 +769,5 @@ module.exports = {
 },{}]},{},[4]);
     </script>
   </footer>
+  </body>
 </html>

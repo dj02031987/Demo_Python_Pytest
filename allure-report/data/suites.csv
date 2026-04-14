@@ -1,3 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","7","test_career_page","Testcases.Tenforce","2026-04-14","broken","2026-04-14","Test_CareePage","test_careerPage","",""
-"","41784","test_launch_url","Testcases.Tenforce","2026-04-14","failed","2026-04-14","Test_CareePage","test_careerPage","",""

@@ -9,7 +9,8 @@ parent_dir = os.getcwd()
 Project_dir = os.path.join(parent_dir, "Testcase")
 screenshots_dirI = os.path.join(Project_dir, "Images")
 DOWNLOAD_DIR = os.path.join(parent_dir, "Download")
-
+PROJECT_PATH = os.path.join(parent_dir,"Testcases","Tenforce")
+DATA_DIR = os.path.join(PROJECT_PATH, "Data")
 
 def pytest_addoption(parser):
     parser.addoption("--P", action="store", default="QA", help="Env Setup")
@@ -29,7 +30,7 @@ def driver():
     chrome_options.add_experimental_option("enableExtensionTargets", value=True)
     driver = webdriver.Chrome(chrome_options)
     driver.maximize_window()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(50)
 
     yield driver
 
