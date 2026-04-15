@@ -27,7 +27,6 @@ def driver():
     chrome_options = Options()
     chrome_options.add_experimental_option("useAutomationExtension", False)
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    chrome_options.add_experimental_option("enableExtensionTargets", value=True)
     driver = webdriver.Chrome(chrome_options)
     driver.maximize_window()
     driver.implicitly_wait(50)
